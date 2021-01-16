@@ -1,9 +1,4 @@
-/**
- * @param {number[]} nums
- * @returns {number}
- */
-const findNumbers = (nums: number[]): number => {
-  return -1;
-};
+const findNumbers = (nums: number[]): number =>
+  nums.filter((value) => value.toString().length % 2 === 0).length;
 
 export default findNumbers;
